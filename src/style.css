@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;400;700&display=swap');
+
+.menu-list {
+    overflow: hidden;
+    width: 45px;
+    height: 40px;
+    position: fixed;
+    z-index: 999;
+}
+
+.menu-opened {
+    width: 200px;
+    height: auto;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transition: all .5s ease;
+}
+
+.overlay {
+    z-index: 998;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0, 0.6);
+    transition: all .3s ease;
+}
+
+.nav-link span {
+    font-size: 2rem;
+}
+
+.home {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.paz-emoji {
+    width: 1.3rem;
+}
+
+.infos h4 {
+    color: rgb(136, 136, 136);
+}
+
+.stack-icons {
+    height: 2rem;
+}
+
+
+@media (min-width: 992px) { 
+    .menu-list {
+        width: 100%;
+        height: 40px;
+    }
+    .menu-list .menu-btn {
+        display: none;
+    }
+    .paz-emoji {
+        width: 2rem;
+    }
+    .paragraph-sub {
+        font-size: 0.7rem;
+        max-width: 250px;
+        margin: 1rem !important;
+    }
+    .stacks {
+        width: 300px !important;
+    }
+}
