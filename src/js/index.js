@@ -13,6 +13,7 @@ document.addEventListener('click', (e) => {
     if(target){
         menuOverlay.classList.remove('overlay')
         menuList.classList.toggle('menu-opened')
-
     }
 })
+
+
