@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;400;700&display=swap');
 
+.main {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 100px;
+}
 .menu-list {
     overflow: hidden;
     width: 45px;
@@ -40,10 +45,15 @@
 }
 
 .home {
-    height: 100vh;
+    height: 100vh !important;
     display: grid;
     place-items: center;
     font-family: 'Poppins', sans-serif;
+}
+
+.img-portfolio img {
+    width: 15rem; 
+    border-radius: 50%;
 }
 
 .paz-emoji {
@@ -59,18 +69,21 @@
     height: 2rem;
 }
 
-.skills {
-    height: 100vh;
-}
+
+
 .img-prog {
     display: none;
 }
 
-
+.projects {
+    margin-bottom: 10rem;
+}
 
 .project-container > img {
     width: 335px;
     height: 335px;
+    z-index: 400;
+    transition: all .3s;
 }
 .project-links a {
     text-decoration: none;
@@ -81,6 +94,24 @@
 }
 
 
+#copy-btn {
+    max-width: 41px;
+}
+#linkedin-btn img {
+    max-width: 41px;
+}
+
+#copy-btn > span {
+    text-align: start;
+}
+
+footer {
+    height: 80vh;
+}
+
+.infos-contact {
+    width: 300px;
+}
 @media (min-width: 768px) { 
     .paz-emoji {
         width: 2rem;
@@ -135,5 +166,30 @@
         gap: 1rem;
         place-items: center;
         align-items: start;
+    }
+    .project-container h4 {
+        transform: translateY(50px);
+        transition: all .3s;
+    }
+    
+    .project-container p, .project-links {
+        transform: translateY(-200px);
+        transition: all .3s;
+    }
+    
+    
+    .project-container:hover h4, .project-container:hover p, .project-container:hover .project-links, .project-container:hover img {
+        transform: scale(0.8);
+    }
+
+    .img-portfolio img {
+        width: 20rem;
+    }
+    
+}
+
+@media (max-height: 500px) {
+    .skills, .projects {
+        padding-top: 300px;
     }
 }

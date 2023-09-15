@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="/src/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="src/js/index.js" defer></script>
     <script src="src/js/translate.js" defer></script>
     <title>Document</title>
@@ -47,19 +48,19 @@
         </div>
     </header>
     
-    <main>
-        <div id="home" class="home w-100 d-lg-flex flex-row-reverse justify-content-lg-center ">
+    <main class="main">
+        <div id="home" class="home w-100 d-lg-flex flex-row-reverse justify-content-lg-center pt-5">
           <div class="img-portfolio py-5">
-            <img src="/src/assets/images/my-photo.png" style="width: 20rem; border-radius: 50%;">
+            <img src="/src/assets/images/my-photo.png">
           </div>
           <div class="infos w-auto d-flex flex-column align-items-center align-items-lg-end">
             <div class="title d-flex align-items-end">
               <img class="paz-emoji mx-3" src="/src/assets/images/emoji.png" alt="emoji">
-              <h1>
+              <h1 class="first-title">
                 Hi, I'm Vanderson
               </h1>
             </div>
-            <h4>Front-End Developer</h4>
+            <h4 class="first-subtitle">Front-End Developer</h4>
             <p class="paragraph-sub text-center mx-5 text-lg-end">Welcome to my portfolio, my name is Vanderson Erlan and i live in Sergipe, Brazil.</p>
             <div class="social w-25 d-flex justify-content-around py-3">
               <a href="https://github.com/Sr-Van" target="_blank">
@@ -84,8 +85,8 @@
         </div>
         <div id="skills" class="skills">
           <div class="body-skills d-flex flex-column align-items-start p-5">
-            <div class="skill-stacks my-5">
-              <h3>Skills</h3>
+            <div class="skill-stacks my-2">
+              <h3 class="card-text-skills">Skills</h3>
               <ul>
                 <li>JavaScript</li>
                 <li>HTML 5</li>
@@ -94,19 +95,19 @@
                 <li>Git</li>
               </ul>
             </div>
-            <div class="schooling my-5">
-              <h3>Schooling</h3>
-              <p>Graduated in System Analysis and Developing - Estacio de Sá</p>
+            <div class="schooling my-2">
+              <h3 class="card-text-schooling">Schooling</h3>
+              <p class="paragraph-schooling">Graduated in System Analysis and Developing - Estacio de Sá</p>
             </div>
-            <div class="soft-skills my-5">
-              <h3>Soft Skills</h3>
+            <div class="soft-skills my-2">
+              <h3 class="card-text-soft-skills">Soft Skills</h3>
               <ul>
-                <li>Communicative</li>
-                <li>Easy problem solving</li>
-                <li>Friendly</li>
-                <li>Calm and focused</li>
-                <li>Pragmatic</li>
-                <li>Good Teammate</li>
+                <li class="li-soft-skills-text-1">Communicative</li>
+                <li class="li-soft-skills-text-2">Easy problem solving</li>
+                <li class="li-soft-skills-text-3">Friendly</li>
+                <li class="li-soft-skills-text-4">Calm and focused</li>
+                <li class="li-soft-skills-text-5">Pragmatic</li>
+                <li class="li-soft-skills-text-6">Good Teammate</li>
               </ul>
             </div>
             <div>
@@ -115,8 +116,8 @@
           </div>
         </div>
         <div id="projects" class="projects d-flex flex-column align-items-center">
-          <div class="header-projects w-100 d-flex justify-content-center pt-5 my-5">
-            <h1>Projects</h1>
+          <div class="header-projects w-100 d-flex justify-content-center pt-5 my-2">
+            <h1 class="title-projects">Projects</h1>
           </div>
 
           <div class="body-projects">
@@ -124,7 +125,7 @@
               <h4>SRV System</h4>
               <img src="src/assets/images/srv-system.png" alt="SRV System">
   
-              <p class="srv-system-p my-2 text-muted">
+              <p class="project-paragraph-1 my-2 text-muted">
                 A System for internet provider, dashboard to admin user. Control registers, feedback, bills and orders.
               </p>
   
@@ -140,7 +141,7 @@
               <h4>Nome</h4>
               <img src="src/assets/images/soon.png" alt="soon">
   
-              <p class="my-2 text-muted">
+              <p class="project-paragraph-2 my-2 text-muted">
                 Explayning in few words about the project
               </p>
   
@@ -156,7 +157,7 @@
               <h4>Nome</h4>
               <img src="src/assets/images/soon.png" alt="soon">
   
-              <p class="my-2 text-muted">
+              <p class="project-paragraph-3 my-2 text-muted">
                 Explayning in few words about the project
               </p>
   
@@ -172,7 +173,7 @@
               <h4>Nome</h4>
               <img src="src/assets/images/soon.png" alt="soon">
   
-              <p class="my-2 text-muted">
+              <p class="project-paragraph-4 my-2 text-muted">
                 Explayning in few words about the project
               </p>
   
@@ -188,11 +189,40 @@
         </div>
     </main>
 
-    <footer class="d-flex align-items-center flex-column">
+    <footer id="contact" class="d-flex align-items-center flex-column">
       <h2 class="h2 pb-5">Contact me:</h2>
-        <div id="contact" class="contact d-flex flex-column w-100 align-items-center">
+        <div class="contact d-flex flex-column w-100 align-items-center flex-lg-row justify-content-evenly">
           <div>
-            
+            <h5>E-mail</h5>
+            <div class="input-group infos-contact mb-4">
+              <span class="input-group-text" style="cursor: pointer;" data-bs-toggle="tooltip" data-bs-title="Copy to clipboard" id="copy-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                </svg>
+              </span>
+              <input id="email-input" type="text" class="form-control" value="vanderson.dev1@gmail.com" disabled>
+            </div>
+            <h5>Linkedin</h5>
+            <div class="input-group infos-contact mb-4">
+              <a href="https://www.linkedin.com/in/vanderson-erlan/" target="_blank" class="input-group-text" data-bs-toggle="tooltip" data-bs-title="Go to" id="linkedin-btn" style="text-decoration: none;">
+
+                <span class="material-symbols-sharp" style="font-size: 1rem;">
+                  arrow_outward
+                </span>
+              </a>
+              <input id="email-input" type="text" class="form-control" value="linkedin.com/in/vanderson-erlan" disabled>
+            </div>
+            <h5>GitHub</h5>
+            <div class="input-group infos-contact mb-4">
+              <a href="https://github.com/Sr-Van" target="_blank" class="input-group-text" data-bs-toggle="tooltip" data-bs-title="Go to" id="linkedin-btn" style="text-decoration: none;">
+
+                <span class="material-symbols-sharp" style="font-size: 1rem;">
+                  arrow_outward
+                </span>
+              </a>
+              <input id="email-input" type="text" class="form-control" value="github.com/Sr-Van" disabled>
+            </div>
           </div>
           <form class="form" target="_blank" action="https://formsubmit.co/9f8f65aa295fd751b278b5a5248e8608" method="POST">
             <div>

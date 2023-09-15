@@ -9,27 +9,28 @@ const langLabel = document.getElementById('lang-a')
 const checkLangPt = document.querySelector('#flexSwitchCheckChecked')
 
 
-const data = {
-    "pt": {
-        "Home" : "Inicio",
-        "Skills" : "Habilidades",
-        "Projects" : "Projetos",
-        "Contact" : "Contato",
-        "Lang" : "Lingua (PT)",
-    }
+
+const showData = data => {
+
+    const language = checkLangPt.checked ? 'pt' : 'en'
+
+    const translate = data[0][language]
+
+    homeLink.textContent = translate.Home
+    skillsLink.textContent = translate.Skills
+    projectsLink.textContent = translate.Projects
+    contactLink.textContent = translate.Contact
+    langLabel.textContent = translate.Lang
+
+    
+    
 }
 
+const getData = async () => {
+    await fetch(`/data.json`).then(response => response.json().then(data => showData(data)))
+}
 
-
-langDiv.addEventListener('click', (e) => {
-    if(checkLangPt.checked) {
-        const lang = e.target.getAttribute('language')
-
-        homeLink.textContent = data[lang].Home
-        skillsLink.textContent = data[lang].Skills
-        projectsLink.textContent = data[lang].Projects
-        contactLink.textContent = data[lang].Contact
-        langLabel.textContent = data[lang].Lang
-    }
+langDiv.addEventListener('click', () => {
+    getData()
 })
 
