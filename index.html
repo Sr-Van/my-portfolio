@@ -32,7 +32,7 @@
                   <a id="projects-a" class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a id="contact-a" class="nav-link" href="#projects">Contact</a>
+                  <a id="contact-a" class="nav-link" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
                   <div class="d-flex align-items-center">
@@ -188,9 +188,45 @@
         </div>
     </main>
 
-    <footer>
-        <div class="contact"></div>
+    <footer class="d-flex align-items-center flex-column">
+      <h2 class="h2 pb-5">Contact me:</h2>
+        <div id="contact" class="contact d-flex flex-column w-100 align-items-center">
+          <div>
+            
+          </div>
+          <form class="form" target="_blank" action="https://formsubmit.co/9f8f65aa295fd751b278b5a5248e8608" method="POST">
+            <div>
+                <label class="form-label">Name</label>
+                <input id="name-form" class="form-control " type="text" name="name" required>
+            </div>
+            <div>
+                <label class="form-label">E-mail</label>
+                <input id="email-form" class="form-control " type="email" name="email" required>
+            </div>
+            <div class="d-flex flex-column">
+                <label class="form-label">Message</label>
+                <textarea id="message-form" class="form-control " name="message" cols="30"  rows="5" ></textarea>
+                <button class="btn-send-submit btn btn-primary my-4 w-100" type="submit" data-bs-toggle="myModal" data-bs-target="myModal">Send</button>
+            </div>
+    
+         <input type="hidden" name="_subject" value="Novo Contato por portifolio">
+         <input type="text" name="_honey" style="display: none;">
+         <input type="hidden" name="_captcha" value="false">
+    
+         <input type="hidden" name="_next" value="index.html">
+        </form>
+        </div>
     </footer>
+    <div id="myModal" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-body d-flex justify-content-between">
+                  <h5>Thank you for contact me!</h5>
+                  <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+              </div>
+          </div>
+      </div>
+  </div>
 
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

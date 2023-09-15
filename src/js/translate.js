@@ -11,6 +11,7 @@ const checkLangPt = document.querySelector('#flexSwitchCheckChecked')
 
 const data = {
     "pt": {
+        "Home" : "Inicio",
         "Skills" : "Habilidades",
         "Projects" : "Projetos",
         "Contact" : "Contato",
@@ -24,6 +25,7 @@ langDiv.addEventListener('click', (e) => {
     if(checkLangPt.checked) {
         const lang = e.target.getAttribute('language')
 
+        homeLink.textContent = data[lang].Home
         skillsLink.textContent = data[lang].Skills
         projectsLink.textContent = data[lang].Projects
         contactLink.textContent = data[lang].Contact
