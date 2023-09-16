@@ -33,10 +33,9 @@ const labelContact1 = getElByClass('.label-contact-1')
 const labelContact3 = getElByClass('.label-contact-3')
 const btnSendSubmit = getElByClass('.btn-send-submit')
 
-
+const userLang = navigator.language || navigator.userLanguage; 
 
 const checkLangPt = document.querySelector('#flexSwitchCheckChecked')
-
 
 
 const translateData = data => {
@@ -85,3 +84,7 @@ langDiv.addEventListener('click', () => {
     getData()
 })
 
+if(userLang == "pt-BR") {
+    checkLangPt.setAttribute('checked', 'checked')
+    getData()
+}

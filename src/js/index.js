@@ -11,9 +11,29 @@ const inputEmail = document.querySelector("#email-input")
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+setInterval(() => {
+    const pageWidth  = document.documentElement.scrollWidth;
+    if(pageWidth >= 1024) {
+        menuOverlay.classList.remove('overlay')
+        menuList.classList.remove('menu-opened')
+        menuList.classList.add('menu-closed')
+    }
+}, 10000);
+
+
 menuBtn.addEventListener('click', () => {
-    menuList.classList.toggle('menu-opened')
-    menuOverlay.classList.toggle('overlay')
+    if(menuList.classList.contains('menu-closed')) {
+        console.log('tem menu closed')
+        menuOverlay.classList.add('overlay')
+        menuList.classList.remove('menu-closed')
+        menuList.classList.add('menu-opened')
+        return
+    }
+    menuList.classList.add('menu-closed')
+    menuList.classList.remove('menu-opened')
+    setTimeout(() => {
+        menuOverlay.classList.remove('overlay')
+    }, 200);
 })
 
 document.addEventListener('click', (e) => {
@@ -21,6 +41,7 @@ document.addEventListener('click', (e) => {
     if(target){
         menuOverlay.classList.remove('overlay')
         menuList.classList.toggle('menu-opened')
+        menuList.classList.toggle('menu-closed')
     }
 })
     
@@ -55,7 +76,3 @@ btnCopyEmail.addEventListener('click', () => {
     navigator.clipboard.writeText(inputEmail.value)
 })
 
-
-/* btnLinkedin.addEventListener('click', () => {
-    window.location.href = 'https://www.linkedin.com/in/vanderson-erlan/'
-}) */
