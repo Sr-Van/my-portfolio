@@ -1,0 +1,62 @@
+[
+    {
+        "pt": {
+            "Home" : "Inicio",
+            "Skills" : "Habilidades",
+            "Projects" : "Projetos",
+            "Contact" : "Contato",
+            "Lang" : "Lingua (PT)",
+            "firstTitle" : "Oi, eu sou Vanderson",
+            "firstSubTitle" : "Desenvolvedor Front-End",
+            "paragraphSub" : "Bem vindo ao meu portifolio, meu nome é Vanderson Erlan e eu moro em Sergipe.",
+            "CardTextSkills" : "Habilidades",
+            "CardTextSchooling" : "Escolaridade",
+            "paragraphSchooling" : "Graduação em Análise e Desenvolvimento de Sistemas - Estacio de Sá",
+            "liTextSoftSkills1" : "Comunicativo",
+            "liTextSoftSkills2" : "Facilidade em resolver problema",
+            "liTextSoftSkills3" : "Amigável",
+            "liTextSoftSkills4" : "Calmo e focado",
+            "liTextSoftSkills5" : "Pragmatico",
+            "liTextSoftSkills6" : "Bom em equipe",
+            "TitleProjects" : "Projetos",
+            "ProjectParagraph1" : "Um sistema para provedora de Internet, dashboard para usuario admin. Controle de registros, feedback, contas e ordens."
+            ,
+            "ProjectParagraph2" : "Em breve um projeto sera adicionado neste conteudo.",
+            "ProjectParagraph3" : "Em breve um projeto sera adicionado neste conteudo.",
+            "ProjectParagraph4" : "Em breve um projeto sera adicionado neste conteudo.",
+            "titleContact" : "Me contate:",
+            "labelContact1" : "Nome",
+            "labelContact3" : "Mensagem",
+            "btnSendSubmit" : "Enviar"   
+        },
+        "en": {
+            "Home" : "Home",
+            "Skills" : "Skills",
+            "Projects" : "Projects",
+            "Contact" : "Contact",
+            "Lang" : "Lang (PT)",
+            "firstTitle" : "Hi, I'm Vanderson",
+            "firstSubTitle" : "Front-End Developer",
+            "paragraphSub" : "Welcome to my portfolio, my name is Vanderson Erlan and i live in Sergipe, Brazil.",
+            "CardTextSkills" : "Skills",
+            "CardTextSchooling" : "Schooling",
+            "paragraphSchooling" : "Graduated in System Analysis and Developing - Estacio de Sá",
+            "liTextSoftSkills1" : "Communicative",
+            "liTextSoftSkills2" : "Easy problem solving",
+            "liTextSoftSkills3" : "Friendly",
+            "liTextSoftSkills4" : "Calm and focused",
+            "liTextSoftSkills5" : "Pragmatic",
+            "liTextSoftSkills6" : "Good Teammate",
+            "TitleProjects" : "Projects",
+            "ProjectParagraph1" : "A System for internet provider, dashboard to admin user. Control registers, feedback, bills and orders."
+            ,
+            "ProjectParagraph2" : "Soon a project will be added here.",
+            "ProjectParagraph3" : "Soon a project will be added here.",
+            "ProjectParagraph4" : "Soon a project will be added here.",
+            "titleContact" : "Contact me:",
+            "labelContact1" : "Name",
+            "labelContact3" : "Message",
+            "btnSendSubmit" : "Send"     
+        }
+    }
+]
