@@ -2,6 +2,8 @@ const menuBtn = document.querySelector('.menu-btn')
 const menuList = document.querySelector('.menu-list')
 const menuOverlay = document.querySelector('#overlay')
 
+const menuButtons = overlay.querySelectorAll(`a[data-btn="btn"]`);
+
 const btnSendEmail = document.querySelector(".btn-send-submit")
 const btnCopyEmail = document.querySelector("#copy-btn")
 const btnLinkedin = document.querySelector("#linkedin-btn")
@@ -11,29 +13,31 @@ const inputEmail = document.querySelector("#email-input")
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+
+const closeMenu = () => {
+    menuList.classList.add('menu-closed')
+    menuList.classList.remove('menu-opened')
+    setTimeout(() => {
+        menuOverlay.classList.remove('overlay')
+    }, 200);
+}
+
 setInterval(() => {
     const pageWidth  = document.documentElement.scrollWidth;
     if(pageWidth >= 1024) {
-        menuOverlay.classList.remove('overlay')
-        menuList.classList.remove('menu-opened')
-        menuList.classList.add('menu-closed')
+        closeMenu()
     }
 }, 10000);
 
 
 menuBtn.addEventListener('click', () => {
     if(menuList.classList.contains('menu-closed')) {
-        console.log('tem menu closed')
         menuOverlay.classList.add('overlay')
         menuList.classList.remove('menu-closed')
         menuList.classList.add('menu-opened')
         return
     }
-    menuList.classList.add('menu-closed')
-    menuList.classList.remove('menu-opened')
-    setTimeout(() => {
-        menuOverlay.classList.remove('overlay')
-    }, 200);
+    closeMenu()
 })
 
 document.addEventListener('click', (e) => {
@@ -76,3 +80,8 @@ btnCopyEmail.addEventListener('click', () => {
     navigator.clipboard.writeText(inputEmail.value)
 })
 
+menuButtons.forEach(btn => {
+    btn.addEventListener("click",() => {
+        closeMenu()
+    })
+})
