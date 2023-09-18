@@ -203,7 +203,7 @@ footer {
     
     
     .project-container:hover h4, .project-container:hover p, .project-container:hover .project-links, .project-container:hover img {
-        transform: scale(0.8);
+        transform: scale(0.9);
     }
 
     .img-portfolio img {

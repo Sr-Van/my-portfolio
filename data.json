@@ -27,7 +27,10 @@
             "titleContact" : "Me contate:",
             "labelContact1" : "Nome",
             "labelContact3" : "Mensagem",
-            "btnSendSubmit" : "Enviar"   
+            "btnSendSubmit" : "Enviar",
+            "spanAEnglish" : "Inglês",
+            "spanAPortuguese" : "Português",
+            "curriculum": "Currículo"
         },
         "en": {
             "Home" : "Home",
@@ -56,7 +59,10 @@
             "titleContact" : "Contact me:",
             "labelContact1" : "Name",
             "labelContact3" : "Message",
-            "btnSendSubmit" : "Send"     
+            "btnSendSubmit" : "Send",
+            "spanAEnglish" : "English",
+            "spanAPortuguese" : "Portuguese",
+            "curriculum": "Curriculum"     
         }
     }
 ]

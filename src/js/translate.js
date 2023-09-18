@@ -33,6 +33,10 @@ const labelContact1 = getElByClass('.label-contact-1')
 const labelContact3 = getElByClass('.label-contact-3')
 const btnSendSubmit = getElByClass('.btn-send-submit')
 
+const curriculum = getElByClass('.curriculum')
+const spanAEnglish = getElByClass('.span-a-english')
+const spanAPortuguese = getElByClass('.span-a-portuguese')
+
 const userLang = navigator.language || navigator.userLanguage; 
 
 const checkLangPt = document.querySelector('#flexSwitchCheckChecked')
@@ -74,6 +78,10 @@ const translateData = data => {
     labelContact1.textContent = translate.labelContact1
     labelContact3.textContent = translate.labelContact3
     btnSendSubmit.textContent = translate.btnSendSubmit
+
+    curriculum.textContent = translate.curriculum
+    spanAEnglish.textContent = translate.spanAEnglish
+    spanAPortuguese.textContent = translate.spanAPortuguese
 }
 
 const getData = async () => {
