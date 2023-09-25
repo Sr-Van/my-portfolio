@@ -82,6 +82,7 @@ const translateData = data => {
     curriculum.textContent = translate.curriculum
     spanAEnglish.textContent = translate.spanAEnglish
     spanAPortuguese.textContent = translate.spanAPortuguese
+
 }
 
 const getData = async () => {

@@ -1,0 +1,12 @@
+.observed {
+    transform: translateY(150px);
+    filter: blur(10px);
+    opacity: 0;
+}
+
+.scroll-animation {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    transition: all .8s ease;
+}
