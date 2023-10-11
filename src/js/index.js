@@ -1,6 +1,7 @@
 const menuBtn = document.querySelector('.menu-btn')
 const menuList = document.querySelector('.menu-list')
 const menuOverlay = document.querySelector('#overlay')
+const menuCheckbox = document.querySelector('.checkbox')
 
 const menuButtons = overlay.querySelectorAll(`a[data-btn="btn"]`);
 
@@ -46,6 +47,7 @@ document.addEventListener('click', (e) => {
         menuOverlay.classList.remove('overlay')
         menuList.classList.toggle('menu-opened')
         menuList.classList.toggle('menu-closed')
+        menuCheckbox.checked = false
     }
 })
     

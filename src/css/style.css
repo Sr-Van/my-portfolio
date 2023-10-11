@@ -6,15 +6,19 @@
     gap: 100px;
 }
 .menu-list {
-    width: 45px;
-    height: 45px;
-    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    overflow: hidden !important;
     position: fixed;
     z-index: 999;
     font-family: 'Poppins', sans-serif;
 }
 .nav-item {
     transition: all .3s ease;
+}
+
+.menu-list .menu-btn {
+    padding: 0;
 }
 
 
@@ -199,7 +203,6 @@ footer {
     .body-projects{
         display: grid !important;
         grid-template-columns: repeat(2, 450px);
-        gap: 1rem;
         place-items: center;
         align-items: start;
     }
@@ -208,15 +211,16 @@ footer {
         transition: all .3s;
     }
     
-    .project-container p, .project-links {
+    .project-container p, .project-links, .project-container .stacks {
         transform: translateY(-200px);
         transition: all .3s;
     }
     
     
-    .project-container:hover h4, .project-container:hover p, .project-container:hover .project-links, .project-container:hover img {
+    .project-container:hover h4, .project-container:hover p, .project-container:hover .project-links, .project-container:hover img, .project-container:hover .stacks{
         transform: scale(0.9);
     }
+
 
     .img-portfolio img {
         width: 20rem;
