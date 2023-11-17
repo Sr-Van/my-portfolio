@@ -159,7 +159,7 @@ footer {
         margin: 1rem !important;
     }
     .stacks {
-        width: 300px !important;
+        width: 350px !important;
         padding-right: 14px;
     }
 }
@@ -213,11 +213,13 @@ footer {
     
     .project-container p, .project-links, .project-container .stacks {
         transform: translateY(-200px);
+        opacity: 0;
         transition: all .3s;
     }
     
     
     .project-container:hover h4, .project-container:hover p, .project-container:hover .project-links, .project-container:hover img, .project-container:hover .stacks{
+        opacity: 1;
         transform: scale(0.9);
     }
 
