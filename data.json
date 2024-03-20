@@ -19,10 +19,10 @@
             "liTextSoftSkills5" : "Pragmatico",
             "liTextSoftSkills6" : "Bom em equipe",
             "TitleProjects" : "Projetos",
-            "ProjectParagraph1" : "Um sistema para provedora de Internet, dashboard para usuario admin. Controle de registros, feedback, contas e ordens."
+            "ProjectParagraph1" : "Um sistema para provedora de Internet, dashboard para usuario admin. Controle de registros, feedback, contas e ordens. Feito com JavaScript, HTML5 e CSS3."
             ,
-            "ProjectParagraph2" : "Um E-commerce com um projeto Full Stack feito totalmente por mim. Back-end em NodeJS, ExpressJS, MongoDB. Com o Front-end em Angular, TypeScript, HTML5, CSS3 e Bootstrap",
-            "ProjectParagraph3" : "Em breve um projeto sera adicionado neste conteudo.",
+            "ProjectParagraph2" : "Um E-commerce com um projeto Full Stack feito totalmente por mim. Back-end em NodeJS, ExpressJS, MongoDB. Com o Front-end em Angular, TypeScript, HTML5, CSS3, Bootstrap e api REST.",
+            "ProjectParagraph3" : "Um projeto de pagina de pedido para uma loja de Café em Angular com o conceito de estilo Parallax com CSS puro, TypeScript em Angular e HTML5.",
             "ProjectParagraph4" : "Em breve um projeto sera adicionado neste conteudo.",
             "titleContact" : "Me contate:",
             "labelContact1" : "Nome",
@@ -51,10 +51,10 @@
             "liTextSoftSkills5" : "Pragmatic",
             "liTextSoftSkills6" : "Good Teammate",
             "TitleProjects" : "Projects",
-            "ProjectParagraph1" : "A System for internet provider, dashboard to admin user. Control registers, feedback, bills and orders."
+            "ProjectParagraph1" : "A System for internet provider, dashboard to admin user. Control registers, feedback, bills and orders. Made with Pure JavaScript, HTML5 and CSS3"
             ,
-            "ProjectParagraph2" : "An E-commerce with a Full Stack project made entirely by me. Back-end in NodeJS, ExpressJS, MongoDB. With Front-end in Angular, TypeScript, HTML5, CSS3 and Bootstrap.",
-            "ProjectParagraph3" : "Soon a project will be added here.",
+            "ProjectParagraph2" : "An E-commerce with a Full Stack project made entirely by me. Back-end in NodeJS, ExpressJS, MongoDB. With Front-end in Angular, TypeScript, HTML5, CSS3, Bootstrap and REST Api.",
+            "ProjectParagraph3" : "An Angular Parallax online order shop of coffee made with pure CSS, TypeScript in Angular and HTML5.",
             "ProjectParagraph4" : "Soon a project will be added here.",
             "titleContact" : "Contact me:",
             "labelContact1" : "Name",
